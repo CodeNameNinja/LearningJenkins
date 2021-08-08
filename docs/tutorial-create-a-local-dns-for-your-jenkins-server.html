@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Tutorial: Jenkins Basics</title>
+    <title>JSDoc: Tutorial: Create a Local DNS for your Jenkins Server</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,34 +17,35 @@
 
 <div id="main">
 
-    <h1 class="page-title">Tutorial: Jenkins Basics</h1>
+    <h1 class="page-title">Tutorial: Create a Local DNS for your Jenkins Server</h1>
 
     <section>
 
 <header>
     
-    <ul>
-        <li><a href="tutorial-configure-lab.html">Configure Lab</a></li>
-    
-        <li><a href="tutorial-install-docker.html">Install Docker</a></li>
-    
-        <li><a href="tutorial-install-docker-compose.html">Install Docker Compose</a></li>
-    
-        <li><a href="tutorial-download-jenkins-docker-image.html">Install Jenkins Docker Image</a></li>
-    
-        <li><a href="tutorial-create-docker-compose-for-jenkins.html">Create Jenkins Compose File</a></li>
-    
-        <li><a href="tutorial-create-a-docker-container-for-jenkins.html">Create a Docker Container for Jenkins</a></li>
-    
-        <li><a href="tutorial-create-a-local-dns-for-your-jenkins-server.html">Create a Local DNS for your Jenkins Server</a></li>
-    </ul>
-    
 
-    <h2>Jenkins Basics</h2>
+    <h2>Create a Local DNS for your Jenkins Server</h2>
 </header>
 
 <article>
-    
+    <h2>Instructions for creating a local DNS for your Jenkins Server</h2>
+<ol>
+<li>Open Notepad as Administrator</li>
+<li>Click on File &gt; Open</li>
+<li>Windows(c:) &gt; Windows &gt; System32 &gt; drivers &gt; etc</li>
+<li>Select filter for all files</li>
+<li>and open the hosts file.</li>
+<li>Copy the IP address of your Jenkins Server
+<blockquote>
+<p><code>ip a</code> or get it from PUTTY</p>
+</blockquote>
+</li>
+<li>Then add it to your hosts and name it what your like, I named it <code>jenkins.local</code></li>
+</ol>
+<p><img src="https://i.ibb.co/gyfd7CJ/Hosts.png" alt="Hosts"></p>
+<p>then navigate to your browser and type in</p>
+<p><code>&lt;host-name&gt;:8080</code></p>
+<p><img src="https://i.ibb.co/bLwbctD/jenkins-local.png" alt="Jenkins.local"></p>
 </article>
 
 </section>
