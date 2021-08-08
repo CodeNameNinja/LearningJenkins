@@ -47,3 +47,17 @@ we should see a screen like this
 
 Now I would recommend to install the `Suggested Plugins`
 
+Wait for the installation to be complete. Afterwards you should immediately see this screen
+
+![Jenkins Create User Page](https://i.ibb.co/yfxK204/jenkins-create-user.png)
+
+Fill in the form and hit *Proceed*
+
+Afterwards we should see a screen like below: 
+- Keep default
+
+![Jenkins Instance Configuration](https://i.ibb.co/h92GLzb/Jenkins-Instance-Configuration.png)
+
+Procceed past the next screen and you should see the Jenkins Dashboard page
+
+![Jenkins Dashboard Page](https://i.ibb.co/XFgQXgp/Jenkins-Dashboard-Page.png)
