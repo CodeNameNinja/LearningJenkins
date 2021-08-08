@@ -1,0 +1,22 @@
+{
+  "jenkins-basics": {
+    "title": "Jenkins Basics",
+    "children":["configure-lab", "install-docker", "install-docker-compose", "download-jenkins-docker-image", "create-docker-compose-for-jenkins"]
+  },
+
+  "configure-lab": {
+    "title": "Configure Lab"
+  },
+  "install-docker":{
+    "title": "Install Docker"
+  },
+  "install-docker-compose":{
+    "title": "Install Docker Compose"
+  },
+  "download-jenkins-docker-image": {
+    "title" : "Install Jenkins Docker Image"
+  },
+  "create-docker-compose-for-jenkins":{
+    "title" : "Create Jenkins Compose File"
+  }
+}
