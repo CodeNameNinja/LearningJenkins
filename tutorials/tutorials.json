@@ -1,22 +1,32 @@
 {
   "jenkins-basics": {
     "title": "Jenkins Basics",
-    "children":["configure-lab", "install-docker", "install-docker-compose", "download-jenkins-docker-image", "create-docker-compose-for-jenkins"]
+    "children": [
+      "configure-lab",
+      "install-docker",
+      "install-docker-compose",
+      "download-jenkins-docker-image",
+      "create-docker-compose-for-jenkins",
+      "create-a-docker-container-for-jenkins"
+    ]
   },
 
   "configure-lab": {
     "title": "Configure Lab"
   },
-  "install-docker":{
+  "install-docker": {
     "title": "Install Docker"
   },
-  "install-docker-compose":{
+  "install-docker-compose": {
     "title": "Install Docker Compose"
   },
   "download-jenkins-docker-image": {
-    "title" : "Install Jenkins Docker Image"
+    "title": "Install Jenkins Docker Image"
   },
-  "create-docker-compose-for-jenkins":{
-    "title" : "Create Jenkins Compose File"
+  "create-docker-compose-for-jenkins": {
+    "title": "Create Jenkins Compose File"
+  },
+  "create-a-docker-container-for-jenkins": {
+    "title": "Create a Docker Container for Jenkins"
   }
 }
