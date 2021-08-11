@@ -39,9 +39,12 @@
   },
   "getting-started-with-jenkins":{
     "title": "Getting Started with Jenkins",
-    "children": ["first-job"]
+    "children": ["first-job","redirect-our-first-job"]
   },
   "first-job":{
     "title": "First Job"
+  },
+  "redirect-our-first-job":{
+    "title": "Redirect Our First Job"
   }
 }

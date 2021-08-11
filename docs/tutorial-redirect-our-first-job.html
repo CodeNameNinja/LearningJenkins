@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Tutorial: Install Docker</title>
+    <title>JSDoc: Tutorial: Redirect Our First Job</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,57 +17,31 @@
 
 <div id="main">
 
-    <h1 class="page-title">Tutorial: Install Docker</h1>
+    <h1 class="page-title">Tutorial: Redirect Our First Job</h1>
 
     <section>
 
 <header>
     
 
-    <h2>Install Docker</h2>
+    <h2>Redirect Our First Job</h2>
 </header>
 
 <article>
-    <h2>Instructions</h2>
-<p><a href="https://docs.docker.com/engine/install/centos/">offical install docs</a></p>
-<h3>Installation</h3>
-<ol>
-<li><code>sudo yum install -y yum-utils</code></li>
-<li>
-<pre class="prettyprint source lang-bash"><code>sudo yum-config-manager \
- --add-repo \
- https://download.docker.com/linux/centos/docker-ce.repo    
-
+    <h2>Redirects and Variables</h2>
+<p>Lets create a variable in the <code>Execute shell</code> section and use it.</p>
+<pre class="prettyprint source lang-bash"><code>Name=Mitchell
+echo &quot;Hi $Name. current date and time is $(date)&quot;
 </code></pre>
-</li>
-</ol>
-<h4>Install Docker Enginer</h4>
-<ol start="3">
-<li>
-<p><code>sudo yum install docker-ce docker-ce-cli containerd.io</code></p>
-</li>
-<li>
-<p><code>sudo systemctl start docker</code></p>
-</li>
-<li>
-<p><code>sudo systemctl enable docker</code></p>
-</li>
-<li>
-<p><code>docker ps</code> &lt;- To test</p>
-</li>
-</ol>
-<blockquote>
-<p>You should get an error from the above command, complaining about permission to connect</p>
-</blockquote>
-<p>to resolve this we simply type out</p>
-<ol start="7">
-<li>
-<p><code>sudo usermod -aG docker &lt;username&gt;</code></p>
-</li>
-<li>
-<p>Logout and Log back in</p>
-</li>
-</ol>
+<p>Okay that works, but what if we want to redirect the output of this data to a file?</p>
+<p>thats also really simple all we have to do is use the</p>
+<p><code>&gt; &lt;path&gt;</code></p>
+<pre class="prettyprint source lang-bash"><code>Name=Mitchell
+echo &quot;Hi $Name. current date and time is $(date) > /tmp/info&quot;
+</code></pre>
+<p>lets verify with</p>
+<p><code>cat /tmp/info</code></p>
+<p>'Hi Mitchell. current date and time is Wed 11 Aug 2021 05:31:34 PM UTC'</p>
 </article>
 
 </section>
