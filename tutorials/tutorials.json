@@ -36,5 +36,12 @@
   },
   "docker-quick-commands-for-jenkins":{
     "title": "Docker Quick Commands for Jenkins"
+  },
+  "getting-started-with-jenkins":{
+    "title": "Getting Started with Jenkins",
+    "children": ["first-job"]
+  },
+  "first-job":{
+    "title": "First Job"
   }
 }
