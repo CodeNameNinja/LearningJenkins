@@ -39,12 +39,15 @@
   },
   "getting-started-with-jenkins":{
     "title": "Getting Started with Jenkins",
-    "children": ["first-job","redirect-our-first-job"]
+    "children": ["first-job","redirect-our-first-job","how-to-execute-bash-scripts"]
   },
   "first-job":{
     "title": "First Job"
   },
   "redirect-our-first-job":{
     "title": "Redirect Our First Job"
+  },
+  "how-to-execute-bash-scripts":{
+    "title": "How to Execute Bash Scripts"
   }
 }
