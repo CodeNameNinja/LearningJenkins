@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Tutorial: First Job</title>
+    <title>JSDoc: Tutorial: Add Parameters to Your Job</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,28 +17,25 @@
 
 <div id="main">
 
-    <h1 class="page-title">Tutorial: First Job</h1>
+    <h1 class="page-title">Tutorial: Add Parameters to Your Job</h1>
 
     <section>
 
 <header>
     
 
-    <h2>First Job</h2>
+    <h2>Add Parameters to Your Job</h2>
 </header>
 
 <article>
-    <h2>Instructions on how to create a job</h2>
-<p><img src="https://i.ibb.co/ZdDskDx/jenkins-create-job2.png" alt="Create a job via new item or on create new job"></p>
-<h3>Make a name and select <em>Freestyle project</em></h3>
-<p><img src="https://i.ibb.co/KX93RTJ/first-job.png" alt="Freestyle Project"></p>
-<h3>Scroll down to Build and select <code>Execute Shell</code> this taps directly into our jenkins container shell.</h3>
-<blockquote>
-<p>Let's print out Hello world</p>
-</blockquote>
-<p><img src="https://i.ibb.co/f0Hmsd1/docker-exec.png" alt="Echo Hello world"></p>
-<h3>lets build and see the output</h3>
-<p><img src="https://i.ibb.co/wWk8M0K/First-Job-1.gif" alt="Build first job"></p>
+    <h2>How to use Parameters</h2>
+<p>Let's click on <code>Configure</code> for <code>Our-First-Job</code>
+and in the <code>General</code> Section, We want to tick <code>This project is parameterized</code></p>
+<p><img src="https://i.ibb.co/gMr36dh/parameters-for-first-job.png" alt="Enable Parameters"></p>
+<p>Lets add two normal <code>String</code> Parameter. <code>FIRSTNAME</code> <code>LASTNAME</code></p>
+<p><img src="https://i.ibb.co/whTPgwN/parameter-firstname-lastname.png" alt="Firstname and lastname"></p>
+<p>and execute the script like so:</p>
+<p><img src="https://i.ibb.co/gjqy1B4/using-variable.png" alt="Firstname and lastname variables"></p>
 </article>
 
 </section>
