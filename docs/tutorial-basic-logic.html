@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Tutorial: Create a Local DNS for your Jenkins Server</title>
+    <title>JSDoc: Tutorial: Basic Logic</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,35 +17,37 @@
 
 <div id="main">
 
-    <h1 class="page-title">Tutorial: Create a Local DNS for your Jenkins Server</h1>
+    <h1 class="page-title">Tutorial: Basic Logic</h1>
 
     <section>
 
 <header>
     
 
-    <h2>Create a Local DNS for your Jenkins Server</h2>
+    <h2>Basic Logic</h2>
 </header>
 
 <article>
-    <h2>Instructions for creating a local DNS for your Jenkins Server</h2>
-<ol>
-<li>Open Notepad as Administrator</li>
-<li>Click on File &gt; Open</li>
-<li>Windows(c:) &gt; Windows &gt; System32 &gt; drivers &gt; etc</li>
-<li>Select filter for all files</li>
-<li>and open the hosts file.</li>
-<li>Copy the IP address of your Jenkins Server
-<blockquote>
-<p><code>ip a</code> or get it from PUTTY</p>
-</blockquote>
-</li>
-<li>Then add it to your hosts and name it what your like, I named it <code>jenkins.local</code></li>
-</ol>
-<p><img src="https://i.ibb.co/gyfd7CJ/Hosts.png" alt="Hosts"></p>
-<p>then navigate to your browser and type in</p>
-<p><code>&lt;host-name&gt;:8080</code></p>
-<p><img src="https://i.ibb.co/bLwbctD/jenkins-local.png" alt="Jenkins.local"></p>
+    <h2>How to use an <code>If</code> statement</h2>
+<p>Let's add a third Parameter called <code>SHOW_NAME</code>.</p>
+<p>This parameter will determine wether we display the name or show an error.</p>
+<pre class="prettyprint source lang-bash"><code>#!/bin/bash
+
+NAME=$1
+LASTNAME=$2
+SHOW_NAME=$3
+
+if [ &quot;$SHOW_NAME&quot; = &quot;true&quot; ]; then
+ echo &quot;Hello, $NAME $LASTNAME&quot;
+else
+ echo &quot;Enable SHOW_NAME to see output&quot;
+fi
+</code></pre>
+<p>copy this script to the container like so:</p>
+<p><code>docker cp script.sh jenkins:/tmp/script.sh</code></p>
+<p>Add a boolean paremeter to your job in jenkins and apply it in the execute script</p>
+<p><img src="https://i.ibb.co/7z2dPRg/boolean-param-2.png" alt="Boolean param">
+<img src="https://i.ibb.co/17P28GS/boolean-param.png" alt="Boolean param"></p>
 </article>
 
 </section>

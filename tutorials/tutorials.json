@@ -31,26 +31,35 @@
   "create-a-docker-container-for-jenkins": {
     "title": "Create a Docker Container for Jenkins"
   },
-  "create-a-local-dns-for-your-jenkins-server":{
+  "create-a-local-dns-for-your-jenkins-server": {
     "title": "Create a Local DNS for your Jenkins Server"
   },
-  "docker-quick-commands-for-jenkins":{
+  "docker-quick-commands-for-jenkins": {
     "title": "Docker Quick Commands for Jenkins"
   },
-  "getting-started-with-jenkins":{
+  "getting-started-with-jenkins": {
     "title": "Getting Started with Jenkins",
-    "children": ["first-job","redirect-our-first-job","how-to-execute-bash-scripts","add-parameters-to-your-job"]
+    "children": [
+      "first-job",
+      "redirect-our-first-job",
+      "how-to-execute-bash-scripts",
+      "add-parameters-to-your-job",
+      "basic-logic"
+    ]
   },
-  "first-job":{
+  "first-job": {
     "title": "First Job"
   },
-  "redirect-our-first-job":{
+  "redirect-our-first-job": {
     "title": "Redirect Our First Job"
   },
-  "how-to-execute-bash-scripts":{
+  "how-to-execute-bash-scripts": {
     "title": "How to Execute Bash Scripts"
   },
-  "add-parameters-to-your-job":{
+  "add-parameters-to-your-job": {
     "title": "Add Parameters to Your Job"
+  },
+  "basic-logic": {
+    "title": "Basic Logic"
   }
 }
