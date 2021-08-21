@@ -61,5 +61,22 @@
   },
   "basic-logic": {
     "title": "Basic Logic"
+  },
+  "Jenkins-And-Docker": {
+    "title": "Jenkins and Docker",
+    "children": [
+      "Docker-Jenkins-SSH-I",
+      "Docker-Jenkins-SSH-II",
+      "Docker-Jenkins-SSH-III"
+    ]
+  },
+  "Docker-Jenkins-SSH-I": {
+    "title": "Docker and Jenkins - SSH-I"
+  },
+  "Docker-Jenkins-SSH-II": {
+    "title": "Docker and Jenkins - SSH-II"
+  },
+  "Docker-Jenkins-SSH-III": {
+    "title": "Docker and Jenkins - SSH-III"
   }
 }
